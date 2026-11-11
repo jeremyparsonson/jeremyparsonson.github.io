@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jeremy Parsonson</title>
+<meta name="description" content="Jeremy Parsonson, Senior Designer. Brand identity, campaigns, digital and motion.">
+<meta property="og:title" content="Jeremy Parsonson">
+<meta property="og:description" content="Jeremy Parsonson, Senior Designer. Brand identity, campaigns, digital and motion.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="name" href="index.html">Jeremy Parsonson, Senior Designer</a>
+  <nav>
+    <a href="index.html#work" aria-current="page">Projects</a>
+    <a href="information.html">Info</a>
+  </nav>
+  <nav>
+    <a href="mailto:jeparsonson@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/jeremy-parsonson-223013231/" target="_blank" rel="noopener">LinkedIn</a>
+  </nav>
+</header>
+<main>
+<h1 class="hero">I work with clients and agencies to shape desirable brands and exciting creative</h1>
+<a class="cta" href="mailto:jeparsonson@gmail.com">Get in touch</a>
+<h2 class="section-label" id="work">A collection of work</h2>
+<ul class="work-list">
+    <li><a href="projects/rae-morris.html"><span>Rae Morris</span><span class="idx">01</span></a></li>
+    <li><a href="projects/byd-australia.html"><span>BYD Australia</span><span class="idx">02</span></a></li>
+    <li><a href="projects/boody.html"><span>Boody</span><span class="idx">03</span></a></li>
+    <li><a href="projects/zorali.html"><span>Zorali</span><span class="idx">04</span></a></li>
+    <li><a href="projects/esmi.html"><span>esmi</span><span class="idx">05</span></a></li>
+    <li><a href="projects/runway-scout.html"><span>Runway Scout</span><span class="idx">06</span></a></li>
+    <li><a href="projects/rep-agency.html"><span>REP. Agency</span><span class="idx">07</span></a></li>
+    <li><a href="projects/fab-lab.html"><span>FAB LAB</span><span class="idx">08</span></a></li>
+</ul>
+<img class="preview" alt="" aria-hidden="true">
+<script>
+(function () {
+  var img = document.querySelector('.preview');
+  document.querySelectorAll('.work-list a[data-thumb]').forEach(function (a) {
+    a.addEventListener('mouseenter', function () { img.src = a.dataset.thumb; img.classList.add('on'); });
+    a.addEventListener('mouseleave', function () { img.classList.remove('on'); });
+    a.addEventListener('mousemove', function (ev) { img.style.left = ev.clientX + 'px'; img.style.top = ev.clientY + 'px'; });
+  });
+})();
+</script>
+</main>
+<footer class="site-footer">
+  <a href="#">&uarr; Top</a>
+  <span>Updated 25.11.11</span>
+</footer>
+</body>
+</html>
